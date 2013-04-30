@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git@github.com:jprichardson/node-sorto.git"
   },
-  "keywords": [],
+  "keywords": ["sort", "object", "array", "collection", "key", "keys", "value", "values"],
   "author": "JP Richardson <jprichardson@gmail.com>",
   "licenses": [
     {
