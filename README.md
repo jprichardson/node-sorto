@@ -126,6 +126,35 @@ EQ (items[4]['jordan'], '33.2')
 EQ (items[5]['cat'], '90.5')
 ```
 
+### Utility Methods
+
+Since `sorto` returns an array of objects with a single/key value pair, it can be kind of annoying accessing those values if you don't know
+their names.
+
+
+### k(obj)
+
+Get the key of an object with a single key/value pair.
+
+**Example:**
+
+```js
+var obj = {name: 'jp'}
+EQ (sorto.k(obj), 'name')
+```
+
+
+### v(obj)
+
+Get the value of an object with a single key/value pair.
+
+**Example:**
+
+```js
+var obj = {name: 'jp'}
+EQ (sorto.v(obj), 'jp')
+```
+
 
 License
 -------

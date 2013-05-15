@@ -1,8 +1,6 @@
 var testutil = require('testutil')
   , sorto = require('../lib/sorto')
 
-var TEST_DIR = ''
-
 
 suite('sorto');
 
@@ -81,7 +79,7 @@ test('- byval(col, transform)', function() {
 
   var items = sorto.byval(obj, parseFloat)
   EQ (items.length, 6)
-  console.dir(items)
+  //console.dir(items)
 
   EQ (items[0]['zoo'], '-5')
   EQ (items[1]['arthur'], '0')
@@ -90,4 +88,15 @@ test('- byval(col, transform)', function() {
   EQ (items[4]['jordan'], '33.2')
   EQ (items[5]['cat'], '90.5')
 })
+
+test('- k(obj)', function() {
+  var obj = {name: 'jp'}
+  EQ (sorto.k(obj), 'name')
+})
+
+test('- v(obj)', function() {
+  var obj = {name: 'jp'}
+  EQ (sorto.v(obj), 'jp')
+})
+
 
